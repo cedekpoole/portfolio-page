@@ -4,7 +4,7 @@
   --blackcoffee: #333333;
   --misty-rose: #f1dede;
   --rich-black: #000103;
-  --pinky-red: #ce6a85;
+  --pinky-red: #ED474A;
 }
 
 body {
@@ -27,7 +27,7 @@ header {
   padding: 1.25rem 0.5rem;
   width: 100%;
   position: fixed;
-  border-bottom: 2px solid black;
+  background-color: var(--blackcoffee);
 }
 
 .page-title {
@@ -74,3 +74,27 @@ nav ul li:hover {
 }
 
 /*********** Hero ****************************/
+
+.hero {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 25px;
+    border-bottom: 3px solid var(--rich-black);
+    background-image: url("https://images.unsplash.com/photo-1513363136477-3efb163fd99d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1798&q=80");
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+ .hero .subtitle {
+    color: white;
+    width: 350px;
+    position: relative;
+    font-size: 50px;
+    padding: 10px;
+    background-color: var(--rich-black);
+    border-radius: 8px 8px 0 0;
+    margin: 0 75px;
+}
