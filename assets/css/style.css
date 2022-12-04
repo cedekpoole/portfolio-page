@@ -21,10 +21,22 @@ a:hover {
   color: var(--rich-black);
 }
 
+h3 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.2rem;
+  background-color: var(--rich-black);
+  border-radius: 8px;
+  width: 80%;
+  margin: 0 auto 25px;
+  padding: 5px 0;
+  color: var(--misty-rose);
+}
+
 /*********** Header ****************************/
 
 header {
-  padding: 1.25rem 0.5rem;
+  padding: 0.5rem 0.5rem;
   width: 100%;
   position: fixed;
   background-color: var(--blackcoffee);
@@ -43,7 +55,6 @@ header {
 nav {
   display: flex;
   float: right;
-  padding: 10px;
   width: 45%;
   margin-top: 6px;
 }
@@ -85,7 +96,7 @@ nav ul li:hover {
   border-bottom: 3px solid var(--rich-black);
   /*background-image: url("https://images.unsplash.com/photo-1513363136477-3efb163fd99d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1798&q=80");*/
   /* background-image: url("https://images.unsplash.com/photo-1516320654132-c3a74da4da5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");*/
-  background-image: url("https://images.unsplash.com/photo-1572470562861-fdec5e26bec2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
+  background-image: url("../images/hero-image.avif");
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -94,7 +105,6 @@ nav ul li:hover {
 .hero .subtitle {
   color: white;
   width: 21.875rem;
-  position: relative;
   font-size: 1.2rem;
   padding: 0.625rem;
   background-color: var(--rich-black);
@@ -103,9 +113,20 @@ nav ul li:hover {
   text-align: center;
 }
 
+/*********** Main ****************************/
+
+.about-image {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  border-radius: 25%;
+  border: 5px solid var(--rich-black);
+}
+
 /*********** Media Queries ****************************/
 
 @media screen and (min-width: 768px) {
+
   .page-title {
     font-size: 2.6rem;
   }
@@ -118,6 +139,10 @@ nav ul li:hover {
 @media screen and (min-width: 992px) {
   .page-title {
     font-size: 3.3rem;
+  }
+
+  .nav {
+    padding: 10px;
   }
 
   nav ul {
