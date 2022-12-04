@@ -96,7 +96,7 @@ nav ul li:hover {
   border-bottom: 3px solid var(--rich-black);
   /*background-image: url("https://images.unsplash.com/photo-1513363136477-3efb163fd99d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1798&q=80");*/
   /* background-image: url("https://images.unsplash.com/photo-1516320654132-c3a74da4da5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");*/
-  background-image: url("../images/hero-image.avif");
+  background-image: url("../images/hero-image.jpeg");
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
