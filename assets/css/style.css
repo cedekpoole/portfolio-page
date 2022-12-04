@@ -1,6 +1,6 @@
 /*********** Global ****************************/
 
-:root {
+:root { /* Use :root variable to save time changing colours */
   --blackcoffee: #333333;
   --misty-rose: #f1dede;
   --rich-black: #000103;
@@ -12,6 +12,12 @@ body {
   background-color: var(--blackcoffee);
 }
 
+p {
+    color: var(--misty-rose);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
 a {
   text-decoration: none;
   color: var(--misty-rose);
@@ -20,7 +26,7 @@ a {
 a:hover {
   color: var(--rich-black);
 }
-
+/* Give global properties for every subheading */
 h3 {
   text-align: center;
   text-decoration: underline;
@@ -28,8 +34,8 @@ h3 {
   background-color: var(--rich-black);
   border-radius: 8px;
   width: 80%;
-  margin: 0 auto 25px;
-  padding: 5px 0;
+  margin: 0 auto 1.5625rem;
+  padding: 0.3125rem 0;
   color: var(--misty-rose);
 }
 
@@ -38,9 +44,10 @@ h3 {
 header {
   padding: 0.5rem 0.5rem;
   width: 100%;
-  position: fixed;
+  position: fixed; /* Keep header stuck to the top */
   background-color: var(--blackcoffee);
   border-bottom: 3px solid var(--rich-black);
+  z-index: 100;
 }
 
 .page-title {
@@ -48,7 +55,7 @@ header {
   color: var(--misty-rose);
   display: inline-block;
   background-color: var(--rich-black);
-  padding: 8px 12px;
+  padding: 0.5rem 0.75rem;
   border-radius: 8px;
 }
 
@@ -56,7 +63,7 @@ nav {
   display: flex;
   float: right;
   width: 45%;
-  margin-top: 6px;
+  margin-top: 0.375rem;
 }
 
 nav ul {
@@ -96,7 +103,7 @@ nav ul li:hover {
   border-bottom: 3px solid var(--rich-black);
   /*background-image: url("https://images.unsplash.com/photo-1513363136477-3efb163fd99d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1798&q=80");*/
   /* background-image: url("https://images.unsplash.com/photo-1516320654132-c3a74da4da5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");*/
-  background-image: url("../images/hero-image.jpeg");
+  background-image: url("https://images.unsplash.com/photo-1572470562861-fdec5e26bec2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -114,14 +121,23 @@ nav ul li:hover {
 }
 
 /*********** Main ****************************/
+.about-container {
+    display: flex;
+    flex-direction: column;
+}
 
 .about-image {
   width: 80%;
-  margin: 0 auto;
-  display: block;
+  margin: 0 auto 1.5625rem;
   border-radius: 25%;
   border: 5px solid var(--rich-black);
 }
+
+.about-text {
+    margin: 0 0.625rem 1.5625rem 0.625rem;
+}
+
+/*********** Footer ****************************/
 
 /*********** Media Queries ****************************/
 
@@ -134,7 +150,34 @@ nav ul li:hover {
   .hero .subtitle {
     font-size: 2rem;
   }
+
+  h3 {
+      display: inline-block;
+      width: 29%;
+      margin-left: 1%;
+      border-radius: 0.5rem 0 0 0.5rem;
+  }
+
+  .about-subheading {
+      margin-bottom: 30rem;
+  }
+
+  .about-image {
+      width: 90%;
+  }
+
+  .about-container {
+      width: 70%;
+      float: right;
+      border-left: 5px solid var(--rich-black);
+      border-bottom: 5px solid var(--rich-black);
+  }
+
+  .about-text {
+    margin: 0 1.875rem 1.5625rem 3.125rem;
+  }
 }
+    
 
 @media screen and (min-width: 992px) {
   .page-title {
@@ -155,5 +198,20 @@ nav ul li:hover {
 
   .hero .subtitle {
     font-size: 3rem;
+  }
+
+  h3 {
+    width: 19%;
+  }
+
+  .about-container {
+    width: 80%;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about-image {
+      width: 55%;
+      margin-left: 20px;
   }
 }
