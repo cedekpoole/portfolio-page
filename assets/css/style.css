@@ -1,6 +1,7 @@
 /*********** Global ****************************/
 
-:root { /* Use :root variable to save time changing colours */
+:root {
+  /* Use :root variable to save time changing colours */
   --blackcoffee: #333333;
   --misty-rose: #f1dede;
   --rich-black: #000103;
@@ -13,9 +14,9 @@ body {
 }
 
 p {
-    color: var(--misty-rose);
-    font-size: 1rem;
-    line-height: 1.5;
+  color: var(--misty-rose);
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 a {
@@ -122,8 +123,8 @@ nav ul li:hover {
 
 /*********** Main ****************************/
 .about-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .about-image {
@@ -134,7 +135,75 @@ nav ul li:hover {
 }
 
 .about-text {
-    margin: 0 0.625rem 1.5625rem 0.625rem;
+  margin: 0 0.625rem 1.5625rem 0.625rem;
+}
+
+#work-grid {
+  display: grid;
+  margin: 0 5%;
+  height: 150vh;
+  min-height: 600px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "project1"
+    "project1"
+    "project2"
+    "project3"
+    "project4"
+    "project5";
+}
+
+#project1 {
+  grid-area: project1;
+  background-color: white;
+}
+
+#project2 {
+  grid-area: project2;
+  background-color: red;
+}
+
+#project3 {
+  grid-area: project3;
+  background-color: blue;
+}
+
+#project4 {
+  grid-area: project4;
+  background-color: green;
+}
+
+#project5 {
+  grid-area: project5;
+  background-color: yellow;
+}
+
+.work-grid-area {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0.3125rem;
+  cursor: pointer;
+  justify-content: end;
+  display: grid;
+  align-content: end;
+  border: 5px solid var(--rich-black);
+}
+
+.work-grid-area:hover {
+  transform: scale(1.005);
+  opacity: 0.8;
+}
+
+.heading {
+  background-color: var(--rich-black);
+  color: var(--misty-rose);
+  padding: 10px;
+  height: 35px;
+  border-radius: 8px 0 0 8px;
+  font-size: 18px;
+  margin-bottom: 15px;
 }
 
 /*********** Footer ****************************/
@@ -142,7 +211,6 @@ nav ul li:hover {
 /*********** Media Queries ****************************/
 
 @media screen and (min-width: 768px) {
-
   .page-title {
     font-size: 2.6rem;
   }
@@ -152,34 +220,53 @@ nav ul li:hover {
   }
 
   h3 {
-      display: inline-block;
-      width: 29%;
-      margin-left: 1%;
-      border-radius: 0.5rem 0 0 0.5rem;
+    display: inline-block;
+    width: 29%;
+    margin-left: 1%;
+    border-radius: 0.5rem 0 0 0.5rem;
   }
 
   .about-subheading {
-      margin-bottom: 30rem;
+    margin-bottom: 40rem;
   }
 
   .about-image {
-      width: 90%;
+    width: 90%;
   }
 
   .about-container {
-      width: 70%;
-      float: right;
-      border-left: 5px solid var(--rich-black);
-      border-bottom: 5px solid var(--rich-black);
+    width: 70%;
+    float: right;
+    border-left: 5px solid var(--rich-black);
+    border-bottom: 5px solid var(--rich-black);
   }
 
   .about-text {
     margin: 0 1.875rem 1.5625rem 3.125rem;
   }
+
+  #work-grid {
+    width: 70%;
+    float: right;
+    border-top: 5px solid var(--rich-black);
+    border-left: 5px solid var(--rich-black);
+    margin: 0;
+    padding: 20px;
+    height: 130vh;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "project1 project1"
+      "project1 project1"
+      "project2 project3"
+      "project4 project5";
+  }
 }
-    
 
 @media screen and (min-width: 992px) {
+  p {
+    font-size: 1.1rem;
+  }
   .page-title {
     font-size: 3.3rem;
   }
@@ -200,6 +287,10 @@ nav ul li:hover {
     font-size: 3rem;
   }
 
+  .about-subheading {
+    margin-bottom: 30rem;
+  }
+
   h3 {
     width: 19%;
   }
@@ -211,7 +302,20 @@ nav ul li:hover {
   }
 
   .about-image {
-      width: 55%;
-      margin-left: 20px;
+    width: 55%;
+    margin-left: 20px;
+  }
+
+  #work-grid {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  p {
+    font-size: 1.3rem;
+  }
+  .about-subheading {
+    margin-bottom: 43rem;
   }
 }
