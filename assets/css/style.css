@@ -14,8 +14,8 @@ body {
 }
 
 main {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 p {
@@ -125,7 +125,7 @@ nav ul li:hover {
 
 /*********** Main ****************************/
 
-/* style the 'about me' section */
+/* Style the 'about me' section */
 .about-container {
   display: flex;
   flex-direction: column;
@@ -142,7 +142,7 @@ nav ul li:hover {
   margin: 0 0.625rem 1.5625rem 0.625rem;
 }
 
-/* place 'work' section in a CSS Grid */
+/* Place 'work' section in a CSS Grid */
 #work-grid {
   /* take the mobile first approach to responsive design */
   display: grid;
@@ -221,20 +221,23 @@ nav ul li:hover {
   margin-bottom: 0.9375rem;
 }
 
+/* Use flex box to organise 'contact me' content */
+
+/* Style separate html page for resume anchor link */
 .container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
 }
 
 .resume-heading {
-    color: var(--misty-rose);
-    font-size: 4rem;
-    background-color: var(--rich-black);
-    display: inline-block;
-    padding: 0.7rem;
-    border-radius: 8px;
-    text-align: center;
+  color: var(--misty-rose);
+  font-size: 4rem;
+  background-color: var(--rich-black);
+  display: inline-block;
+  padding: 0.7rem;
+  border-radius: 8px;
+  text-align: center;
 }
 
 /*********** Footer ****************************/
@@ -299,7 +302,6 @@ nav ul li:hover {
     font-size: 1.5rem;
     height: 2.5rem;
   }
-
 }
 
 @media screen and (min-width: 992px) {
