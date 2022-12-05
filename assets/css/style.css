@@ -13,6 +13,11 @@ body {
   background-color: var(--blackcoffee);
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 p {
   color: var(--misty-rose);
   font-size: 1rem;
@@ -23,7 +28,6 @@ a {
   text-decoration: none;
   color: var(--misty-rose);
 }
-
 
 /* Give global properties for every subheading */
 h3 {
@@ -139,9 +143,10 @@ nav ul li:hover {
 }
 
 /* place 'work' section in a CSS Grid */
-#work-grid { /* take the mobile first approach to responsive design */
+#work-grid {
+  /* take the mobile first approach to responsive design */
   display: grid;
-  margin: 0 5%;
+  margin: 0 5% 1.5625rem;
   height: 150vh;
   min-height: 600px;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -155,32 +160,38 @@ nav ul li:hover {
     "project5";
 }
 
-#project1 { /* refactor challenge */
+#project1 {
+  /* refactor challenge */
   grid-area: project1;
-  background-image: url("../images/project1.jpg")
+  background-image: url("../images/project1.jpg");
 }
 
-#project2 { /* study guide */
+#project2 {
+  /* study guide */
   grid-area: project2;
-  background-image: url("../images/project2.jpg")
+  background-image: url("../images/project2.jpg");
 }
 
-#project3 { /* box model practice */
+#project3 {
+  /* box model practice */
   grid-area: project3;
   background-image: url("../images/project3.png");
 }
 
-#project4 { /* dog */
+#project4 {
+  /* dog */
   grid-area: project4;
-  background-image: url("../images/dog.jpg")
+  background-image: url("../images/dog.jpg");
 }
 
-#project5 { /* cat */
+#project5 {
+  /* cat */
   grid-area: project5;
   background-image: url("../images/cat.jpg");
 }
 
-.work-grid-area { /* style each area of the grid */
+.work-grid-area {
+  /* style each area of the grid */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -194,19 +205,36 @@ nav ul li:hover {
 }
 
 /* make areas grow in size when you hover over the element */
-.work-grid-area:hover { 
+.work-grid-area:hover {
   transform: scale(1.005);
   opacity: 0.8;
 }
 
-.heading { /* style area headings to fit with look of page */
+.heading {
+  /* style area headings to fit with look of page */
   background-color: var(--rich-black);
   color: var(--misty-rose);
-  padding: 10px;
-  height: 35px;
+  padding: 0.625rem;
+  height: 2.1875rem;
   border-radius: 8px 0 0 8px;
-  font-size: 18px;
-  margin-bottom: 15px;
+  font-size: 1.125rem;
+  margin-bottom: 0.9375rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+}
+
+.resume-heading {
+    color: var(--misty-rose);
+    font-size: 4rem;
+    background-color: var(--rich-black);
+    display: inline-block;
+    padding: 0.7rem;
+    border-radius: 8px;
+    text-align: center;
 }
 
 /*********** Footer ****************************/
@@ -249,13 +277,14 @@ nav ul li:hover {
     margin: 0 1.875rem 1.5625rem 3.125rem;
   }
 
-  #work-grid { /* change grid layout for better use of the available space */
+  #work-grid {
+    /* change grid layout for better use of the available space */
     width: 70%;
     float: right;
     border-top: 5px solid var(--rich-black);
     border-left: 5px solid var(--rich-black);
     margin: 0;
-    padding: 20px;
+    padding: 1.25rem;
     height: 130vh;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -267,9 +296,10 @@ nav ul li:hover {
   }
 
   .heading {
-      font-size: 24px;
-      height: 40px;
+    font-size: 1.5rem;
+    height: 2.5rem;
   }
+
 }
 
 @media screen and (min-width: 992px) {
@@ -278,7 +308,7 @@ nav ul li:hover {
   }
 
   .nav {
-    padding: 10px;
+    padding: 0.625rem;
   }
 
   nav ul {
@@ -309,7 +339,7 @@ nav ul li:hover {
 
   .about-image {
     width: 55%;
-    margin-left: 20px;
+    margin-left: 1.25rem;
   }
 
   #work-grid {
