@@ -253,8 +253,9 @@ nav ul li:hover {
   cursor: pointer;
 }
 
-.icon:hover { /* give icons a hover effect */
-    opacity: 0.7;
+.icon:hover {
+  /* give icons a hover effect */
+  opacity: 0.7;
 }
 
 /* Style separate html page for resume anchor link */
@@ -277,26 +278,27 @@ nav ul li:hover {
 /*********** Footer ****************************/
 
 .footer-image {
-    width: 100%;
-    height: 150px;
-    background-image: url("https://images.unsplash.com/photo-1572470562861-fdec5e26bec2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
-    border-top: 5px solid var(--rich-black);
-    background-size: cover;
-    background-position: center;
+  width: 100%;
+  height: 150px;
+  background-image: url("https://images.unsplash.com/photo-1572470562861-fdec5e26bec2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
+  border-top: 5px solid var(--rich-black);
+  background-size: cover;
+  background-position: center;
 }
 
 /*********** Media Queries ****************************/
 
 /* mobile first approach to responsive design */
 @media screen and (min-width: 768px) {
-  h3 { /* set h3 properties globally at min width of 768px */
+  h3 {
+    /* set h3 properties globally at min width of 768px */
     display: inline-block;
     width: 29%;
     margin-left: 1%;
     border-radius: 0.5rem 0 0 0.5rem;
   }
 
-  .page-title { 
+  .page-title {
     font-size: 2.6rem;
   }
 
@@ -352,13 +354,12 @@ nav ul li:hover {
   }
 
   .contact-info {
-      width: 8.5rem;
-      margin: 1.5625rem 0;
+    width: 8.5rem;
+    margin: 1.5625rem 0;
   }
 }
 
 @media screen and (min-width: 992px) {
-  
   h3 {
     width: 19%;
   }
@@ -399,14 +400,14 @@ nav ul li:hover {
   }
 
   .contact-container {
-      width: 80%;
+    width: 80%;
   }
 }
 
 @media screen and (min-width: 1150px) {
-    .about-text {
-        font-size: 1.2rem;
-    }
+  .about-text {
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (min-width: 1600px) {
