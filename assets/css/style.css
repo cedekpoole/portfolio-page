@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: "Questrial", sans-serif;
+  font-family: "Questrial", sans-serif; /* link google fonts to style page */
   background-color: var(--blackcoffee);
 }
 
@@ -24,9 +24,7 @@ a {
   color: var(--misty-rose);
 }
 
-a:hover {
-  color: var(--rich-black);
-}
+
 /* Give global properties for every subheading */
 h3 {
   text-align: center;
@@ -48,7 +46,7 @@ header {
   position: fixed; /* Keep header stuck to the top */
   background-color: var(--blackcoffee);
   border-bottom: 3px solid var(--rich-black);
-  z-index: 100;
+  z-index: 100; /* bring header to the front */
 }
 
 .page-title {
@@ -89,6 +87,7 @@ nav ul li {
 nav ul li:hover {
   background: var(--pinky-red);
   color: var(--rich-black);
+  /* create a hover effect for the links */
   box-shadow: 0 0.5em 0.5em -0.4em var(--rich-black);
   transform: translateY(-0.2em);
 }
@@ -102,10 +101,9 @@ nav ul li:hover {
   background-position: center;
   margin-bottom: 1.5625rem;
   border-bottom: 3px solid var(--rich-black);
-  /*background-image: url("https://images.unsplash.com/photo-1513363136477-3efb163fd99d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1798&q=80");*/
-  /* background-image: url("https://images.unsplash.com/photo-1516320654132-c3a74da4da5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");*/
   background-image: url("https://images.unsplash.com/photo-1572470562861-fdec5e26bec2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
   display: flex;
+  /* bring subtitle to the bottom right of the image */
   justify-content: flex-end;
   align-items: flex-end;
 }
@@ -122,6 +120,8 @@ nav ul li:hover {
 }
 
 /*********** Main ****************************/
+
+/* style the 'about me' section */
 .about-container {
   display: flex;
   flex-direction: column;
@@ -138,7 +138,8 @@ nav ul li:hover {
   margin: 0 0.625rem 1.5625rem 0.625rem;
 }
 
-#work-grid {
+/* place 'work' section in a CSS Grid */
+#work-grid { /* take the mobile first approach to responsive design */
   display: grid;
   margin: 0 5%;
   height: 150vh;
@@ -154,37 +155,37 @@ nav ul li:hover {
     "project5";
 }
 
-#project1 {
+#project1 { /* refactor challenge */
   grid-area: project1;
   background-image: url("../images/project1.jpg")
 }
 
-#project2 {
+#project2 { /* study guide */
   grid-area: project2;
   background-image: url("../images/project2.jpg")
 }
 
-#project3 {
+#project3 { /* box model practice */
   grid-area: project3;
   background-image: url("../images/project3.png");
 }
 
-#project4 {
+#project4 { /* dog */
   grid-area: project4;
   background-image: url("../images/dog.jpg")
 }
 
-#project5 {
+#project5 { /* cat */
   grid-area: project5;
   background-image: url("../images/cat.jpg");
 }
 
-.work-grid-area {
+.work-grid-area { /* style each area of the grid */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0.3125rem;
-  cursor: pointer;
+  cursor: pointer; /* make it evident that each area is a link */
   justify-content: end;
   display: grid;
   align-content: end;
@@ -192,12 +193,13 @@ nav ul li:hover {
   border-radius: 8px;
 }
 
-.work-grid-area:hover {
+/* make areas grow in size when you hover over the element */
+.work-grid-area:hover { 
   transform: scale(1.005);
   opacity: 0.8;
 }
 
-.heading {
+.heading { /* style area headings to fit with look of page */
   background-color: var(--rich-black);
   color: var(--misty-rose);
   padding: 10px;
@@ -211,6 +213,7 @@ nav ul li:hover {
 
 /*********** Media Queries ****************************/
 
+/* mobile first approach to responsive design */
 @media screen and (min-width: 768px) {
   .page-title {
     font-size: 2.6rem;
@@ -246,7 +249,7 @@ nav ul li:hover {
     margin: 0 1.875rem 1.5625rem 3.125rem;
   }
 
-  #work-grid {
+  #work-grid { /* change grid layout for better use of the available space */
     width: 70%;
     float: right;
     border-top: 5px solid var(--rich-black);
@@ -270,9 +273,6 @@ nav ul li:hover {
 }
 
 @media screen and (min-width: 992px) {
-  p {
-    font-size: 1rem;
-  }
   .page-title {
     font-size: 3.3rem;
   }
@@ -294,7 +294,7 @@ nav ul li:hover {
   }
 
   .about-subheading {
-    margin-bottom: 32rem;
+    margin-bottom: 30.25rem;
   }
 
   h3 {
