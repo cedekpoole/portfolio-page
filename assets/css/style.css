@@ -258,6 +258,12 @@ nav ul li:hover {
   opacity: 0.7;
 }
 
+.block {
+  background-color: var(--rich-black);
+  padding: 0.6rem;
+  border-radius: 50%;
+}
+
 /* Style separate html page for resume anchor link */
 .container {
   display: flex;
@@ -359,10 +365,8 @@ nav ul li:hover {
   }
 
   .block {
-    background-color: var(--rich-black);
     padding: 0.8rem;
-    border-radius: 8px;
-}
+  }
 }
 
 @media screen and (min-width: 992px) {
