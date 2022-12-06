@@ -357,6 +357,12 @@ nav ul li:hover {
     width: 8.5rem;
     margin: 1.5625rem 0;
   }
+
+  .block {
+    background-color: var(--rich-black);
+    padding: 0.8rem;
+    border-radius: 8px;
+}
 }
 
 @media screen and (min-width: 992px) {
