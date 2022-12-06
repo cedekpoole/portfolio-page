@@ -2,7 +2,7 @@
 
 ## Description
 
-This project is my portfolio page, created using a combination of HTML and CSS (to see it, click here: https://cedekpoole.github.io/portfolio-page/). Semantic HTML has been employed throughout and the CSS file is lined with comments to help other developers know what each selector is for. Flex Box and CSS Grid have been used in conjunction for this project as means to build a more responsive webpage. Both layout systems also allow developers to better organise their elements on a page. 
+This project is my portfolio page, created using a combination of HTML and CSS (to see it, click here: https://cedekpoole.github.io/portfolio-page/). Semantic HTML elements have been employed throughout and the CSS file has been properly commented to help other developers know what each selector is for. Flex Box, in conjunction with CSS grid, has been used as means to build a more responsive webpage. Both layout systems also allow developers to better organise their elements on a page. 
 
 In addition to this, I have created a fixed header that permanently sticks to the top of the screen. Within this header, there are navigation links that take you to the different sections of my site. There are three main parts of the landing page: an 'About Me', 'Work' and a 'Contact Me' section. There is also a 'Resume' section that takes you to a separate HTML file (which is in progress). Within 'Work', all my completed projects are displayed. 
 
