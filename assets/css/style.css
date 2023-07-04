@@ -161,33 +161,33 @@ nav ul li:hover {
 }
 
 #project1 {
-  /* refactor challenge */
+  /* weekly blog */
   grid-area: project1;
-  background-image: url("../images/project1.jpg");
+  background-image: url("../images/blog.png");
 }
 
 #project2 {
-  /* study guide */
+  /* productive programming */
   grid-area: project2;
-  background-image: url("../images/project2.jpg");
+  background-image: url("../images/productive-programming.png");
 }
 
 #project3 {
-  /* box model practice */
+  /* favourite music dashboard */
   grid-area: project3;
-  background-image: url("../images/project3.png");
+  background-image: url("../images/music-dashboard.png");
 }
 
 #project4 {
-  /* dog */
+  /* article summariser */
   grid-area: project4;
-  background-image: url("../images/dog.jpg");
+  background-image: url("../images/article-summariser.png");
 }
 
 #project5 {
-  /* cat */
+  /* password generator */
   grid-area: project5;
-  background-image: url("../images/cat.jpg");
+  background-image: url("../images/password-gen.jpg");
 }
 
 .work-grid-area {
