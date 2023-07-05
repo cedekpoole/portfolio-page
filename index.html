@@ -10,13 +10,24 @@
       href="https://fonts.googleapis.com/css?family=Questrial"
     />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Portfolio Page</title>
   </head>
   <body>
     <header className="navbar">
-      <h1 class="page-title">Cameron Edek Poole</h1>
+      <!-- <h1 class="page-title">Cedekpoole</h1> -->
       <nav>
-        <ul>
+        <div id="hamburger-menu">
+          <h1 class="page-title">Cedekpoole</h1>
+          <i id="toggle-hamburger" class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="nav-links">
           <li><a href="#about-section">About Me</a></li>
           <li><a href="#work-section">Work</a></li>
           <li><a href="#contact-section">Contact Me</a></li>
@@ -40,9 +51,9 @@
             I am a recent Philosophy graduate who has an affinity for problem
             solving. While I very much enjoy analysing continental philosophy, I
             am seeking a new adventure in a completely different field.
-            <br /><br />Within the world of programming, you feel like you are 
-            constantly learning something new every day which has spurred my want 
-            of a job in tech even further. I am currently developing my
+            <br /><br />Within the world of programming, you feel like you are
+            constantly learning something new every day which has spurred my
+            want of a job in tech even further. I am currently developing my
             skills in web development and am enjoying the journey thus far! :)
           </p>
         </div>
@@ -131,5 +142,6 @@
       <div class="footer-image"></div>
     </footer>
     <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/toggleHamburger.js"></script>
   </body>
 </html>
